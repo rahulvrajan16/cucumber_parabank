@@ -1,0 +1,209 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-24T15:28:23.859Z",
+        "line": 13,
+        "name": "Validate SignUp Functionality to ParaBank",
+        "description": "",
+        "id": "validate-signup-functionality-to-parabank;validate-signup-functionality-to-parabank;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 29949000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user click Register link from HomePage",
+            "match": {
+              "location": "step.definitions.RegisterParaBank.user_click_register_link_from_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 491000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enter FirstName, LastName, Address, City, State",
+            "match": {
+              "location": "step.definitions.RegisterParaBank.user_enter_first_name_last_name_address_city_state(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Jewel",
+                  "Mary",
+                  "Kingston",
+                  "NJ",
+                  "NJ"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4586000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "enter 7890, 485223, 212, Jewel2021, Jewel2021, Jewel2021",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7890",
+                  "offset": 6
+                },
+                {
+                  "val": "485223",
+                  "offset": 12
+                },
+                {
+                  "val": "212",
+                  "offset": 20
+                }
+              ],
+              "location": "step.definitions.RegisterParaBank.enter_jewel2021_jewel2021_jewel2021(java.lang.Integer,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1217000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click on Register Button",
+            "match": {
+              "location": "step.definitions.RegisterParaBank.click_on_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[If you have an account with us you can sign-up for free instant online access. You will have to provide some personal informatio]n.\u003e but was:\u003c[Your account was created successfully. You are now logged i]n.\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat step.definitions.RegisterParaBank.message_should_be_displayed_in_welcome_page(RegisterParaBank.java:71)\r\n\tat ✽.message \"Your account was created successfully. You are now logged in.\" should be displayed in Welcome Page(file:///C:/Users/rahul/IdeaProjects/ParaBankProject/src/test/resources/Features/Register.feature:10)\r\n",
+              "duration": 77000000,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "message \"Your account was created successfully. You are now logged in.\" should be displayed in Welcome Page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your account was created successfully. You are now logged in.\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step.definitions.RegisterParaBank.message_should_be_displayed_in_welcome_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-24T15:29:00.409Z",
+        "line": 17,
+        "name": "Validate SignUp Functionality to ParaBank with one row",
+        "description": "",
+        "id": "validate-signup-functionality-to-parabank;validate-signup-functionality-to-parabank-with-one-row",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23884000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click Register link from HomePage",
+            "match": {
+              "location": "step.definitions.RegisterParaBank.click_register_link_from_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5101000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Enter FirstName, LastName, Address, City, State, Zipcode, PhoneNum, SSN, UserName, Password, Confirm",
+            "match": {
+              "location": "step.definitions.RegisterParaBank.enter_first_name_last_name_address_city_state_zipcode_phone_num_ssn_user_name_password_confirm(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Jewel",
+                  "Mary",
+                  "Kingston",
+                  "NJ",
+                  "NJ",
+                  "7890",
+                  "485223",
+                  "212",
+                  "1Jewel2021",
+                  "1Jewel2021",
+                  "1Jewel2021"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2708000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Click Register Button",
+            "match": {
+              "location": "step.definitions.RegisterParaBank.click_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[If you have an account with us you can sign-up for free instant online access. You will have to provide some personal informatio]n.\u003e but was:\u003c[Your account was created successfully. You are now logged i]n.\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat step.definitions.RegisterParaBank.message_should_be_displayed(RegisterParaBank.java:122)\r\n\tat ✽.Message \"Your account was created successfully. You are now logged in.\" should be displayed.(file:///C:/Users/rahul/IdeaProjects/ParaBankProject/src/test/resources/Features/Register.feature:22)\r\n",
+              "duration": 62000000,
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "Message \"Your account was created successfully. You are now logged in.\" should be displayed.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your account was created successfully. You are now logged in.\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step.definitions.RegisterParaBank.message_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validate SignUp Functionality to ParaBank",
+    "description": "",
+    "id": "validate-signup-functionality-to-parabank",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Register.feature",
+    "tags": []
+  }
+]

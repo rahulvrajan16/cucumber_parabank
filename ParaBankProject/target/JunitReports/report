@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="68.742">
+<testcase classname="Validate SignUp Functionality to ParaBank" name="Validate SignUp Functionality to ParaBank" time="36.504">
+<failure message="expected:&lt;[If you have an account with us you can sign-up for free instant online access. You will have to provide some personal informatio]n.&gt; but was:&lt;[Your account was created successfully. You are now logged i]n.&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given user click Register link from HomePage................................passed
+When user enter FirstName, LastName, Address, City, State...................passed
+And enter 7890, 485223, 212, Jewel2021, Jewel2021, Jewel2021................passed
+And click on Register Button................................................passed
+Then message "Your account was created successfully. You are now logged in." should be displayed in Welcome Page.failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[If you have an account with us you can sign-up for free instant online access. You will have to provide some personal informatio]n.> but was:<[Your account was created successfully. You are now logged i]n.>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at step.definitions.RegisterParaBank.message_should_be_displayed_in_welcome_page(RegisterParaBank.java:71)
+	at ✽.message "Your account was created successfully. You are now logged in." should be displayed in Welcome Page(file:///C:/Users/rahul/IdeaProjects/ParaBankProject/src/test/resources/Features/Register.feature:10)
+]]></failure>
+</testcase>
+<testcase classname="Validate SignUp Functionality to ParaBank" name="Validate SignUp Functionality to ParaBank with one row" time="31.765">
+<failure message="expected:&lt;[If you have an account with us you can sign-up for free instant online access. You will have to provide some personal informatio]n.&gt; but was:&lt;[Your account was created successfully. You are now logged i]n.&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given Click Register link from HomePage.....................................passed
+When Enter FirstName, LastName, Address, City, State, Zipcode, PhoneNum, SSN, UserName, Password, Confirm.passed
+And Click Register Button...................................................passed
+Then Message "Your account was created successfully. You are now logged in." should be displayed..failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[If you have an account with us you can sign-up for free instant online access. You will have to provide some personal informatio]n.> but was:<[Your account was created successfully. You are now logged i]n.>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at step.definitions.RegisterParaBank.message_should_be_displayed(RegisterParaBank.java:122)
+	at ✽.Message "Your account was created successfully. You are now logged in." should be displayed.(file:///C:/Users/rahul/IdeaProjects/ParaBankProject/src/test/resources/Features/Register.feature:22)
+]]></failure>
+</testcase>
+</testsuite>
